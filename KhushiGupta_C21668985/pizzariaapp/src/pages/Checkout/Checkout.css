@@ -1,0 +1,234 @@
+.checkout-container{
+
+    width:90%;
+
+    margin:auto;
+
+    padding:40px 0;
+
+}
+
+.checkout-container h1{
+
+    text-align:center;
+
+    font-size:50px;
+
+    color:#ff5a00;
+
+    margin-bottom:30px;
+
+}
+
+.summary-title{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.checkout-card{
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:center;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,0.12);
+
+}
+
+.checkout-image{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+.checkout-details{
+
+    flex:1;
+
+}
+
+.checkout-details h3{
+
+    margin-bottom:12px;
+
+    color:#222;
+
+}
+
+.checkout-details p{
+
+    margin:8px 0;
+
+    color:#555;
+
+}
+
+.ingredient-box{
+
+    margin:15px 0;
+
+    padding:12px;
+
+    background:#fff8ef;
+
+    border-left:5px solid #ff9800;
+
+    border-radius:8px;
+
+}
+
+.ingredient-box h4{
+
+    margin-bottom:8px;
+
+    color:#ff5a00;
+
+}
+
+.subtotal{
+
+    color:#ff5a00;
+
+    margin-top:15px;
+
+}
+
+.checkout-summary{
+
+    margin-top:40px;
+
+    text-align:right;
+
+}
+
+.checkout-summary h2{
+
+    margin-bottom:10px;
+
+    font-size:32px;
+
+}
+
+.place-order-btn{
+
+    margin-top:20px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2e7d32;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.place-order-btn:hover{
+
+    background:#1b5e20;
+
+}
+/* ========================= */
+/* Responsive Design */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .checkout-container{
+
+        width:95%;
+        padding:20px 0;
+
+    }
+
+    .checkout-container h1{
+
+        font-size:34px;
+
+    }
+
+    .summary-title{
+
+        font-size:24px;
+
+        margin-bottom:25px;
+
+    }
+
+    .checkout-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:20px;
+
+    }
+
+    .checkout-image{
+
+        width:180px;
+        height:180px;
+
+    }
+
+    .checkout-details{
+
+        width:100%;
+
+    }
+
+    .ingredient-box{
+
+        text-align:left;
+
+    }
+
+    .checkout-summary{
+
+        text-align:center;
+
+    }
+
+    .checkout-summary h2{
+
+        font-size:24px;
+
+    }
+
+    .place-order-btn{
+
+        width:100%;
+        padding:15px;
+        font-size:18px;
+
+    }
+
+}

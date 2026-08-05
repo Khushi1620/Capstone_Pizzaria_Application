@@ -1,0 +1,161 @@
+.feedback-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:85vh;
+
+    background:#f8f8f8;
+
+}
+
+.feedback-card{
+
+    width:600px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+
+}
+
+.feedback-card h1{
+
+    text-align:center;
+
+    color:#ff5a00;
+
+    margin-bottom:30px;
+
+}
+
+.feedback-card form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.feedback-card label{
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.feedback-card select,
+
+.feedback-card textarea{
+
+    padding:15px;
+
+    font-size:17px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+}
+
+.feedback-card select:focus,
+
+.feedback-card textarea:focus{
+
+    border:2px solid #ff5a00;
+
+}
+
+.feedback-card textarea{
+
+    resize:none;
+
+}
+
+.feedback-card button{
+
+    padding:15px;
+
+    font-size:18px;
+
+    background:#ff5a00;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.feedback-card button:hover{
+
+    background:#e14f00;
+
+}
+
+/* ========================= */
+/* Responsive Design */
+/* ========================= */
+
+@media (max-width:768px){
+
+    .feedback-container{
+
+        padding:20px;
+
+    }
+
+    .feedback-card{
+
+        width:100%;
+        padding:30px 20px;
+
+    }
+
+    .feedback-card h1{
+
+        font-size:30px;
+
+    }
+
+    .feedback-card label{
+
+        font-size:16px;
+
+    }
+
+    .feedback-card select,
+
+    .feedback-card textarea{
+
+        font-size:16px;
+        padding:12px;
+
+    }
+
+    .feedback-card button{
+
+        width:100%;
+        font-size:17px;
+        padding:14px;
+
+    }
+
+}

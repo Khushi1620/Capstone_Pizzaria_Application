@@ -1,0 +1,49 @@
+.menu-container {
+    padding: 40px;
+}
+
+.menu-heading {
+    text-align: center;
+    font-size: 55px;
+    color: #ff5a00;
+    margin-bottom: 10px;
+}
+
+.menu-subtitle {
+    text-align: center;
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+/* Pizza Cards Container */
+
+.pizza-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+
+/*Responsive Menu*/
+
+@media (max-width:768px){
+
+    .menu-container{
+        padding:30px 15px;
+    }
+
+    .menu-heading{
+        font-size:40px;
+    }
+
+    .menu-subtitle{
+        font-size:18px;
+        margin-bottom:35px;
+    }
+
+    .pizza-grid{
+        gap:20px;
+    }
+
+}
