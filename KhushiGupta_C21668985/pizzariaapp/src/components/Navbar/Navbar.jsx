@@ -1,9 +1,6 @@
 import "./Navbar.css";
-
 import {useSelector, useDispatch} from "react-redux";
-// Link is use so that we can navigate to different pages without reloading the page.
 import { Link, useNavigate } from "react-router-dom";
-
 import { logout } from "../../redux/slices/authSlice";
 
 // cart = 0 after logg out
@@ -42,41 +39,25 @@ function Navbar() {
       </div>
 
       <ul className="nav-links">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-
-        <li>
-          <Link to="/menu">Order Pizza</Link>
-        </li>
-
-        <li>
-          <Link to="/cart">Cart ({totalCartItems})</Link>
-        </li>
-
-  {/* Login and register function if user logged in then register will become logout */}
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/menu">Order Pizza</Link></li>
+        <li><Link to="/cart">Cart ({totalCartItems})</Link></li>
+{/* Login and register function if user logged in then register will become logout */}
         {
-  isLoggedIn ? (
-    <>
-      <li>Hi, {user.name} 👋</li>
-      <li>
-        <button onClick={handleLogout}>
-          Logout
-        </button>
-      </li>
-    </>
-  ) : (
-    <>
-      <li>
-        <Link to="/login">Login</Link>
-      </li>
-
-      <li>
-        <Link to="/register">Register</Link>
-      </li>
-    </>
-  )
-}
+          isLoggedIn ? (
+                <>
+                  <li>Hi, {user.name} 👋</li>
+                  <li>
+                    <button onClick={handleLogout}>Logout</button>
+                  </li>
+                </>
+                        ) : (
+                <>
+                  <li><Link to="/login">Login</Link></li>
+                  <li><Link to="/register">Register</Link></li>
+                </>
+                        )
+         }
       </ul>
     </nav>
   );
